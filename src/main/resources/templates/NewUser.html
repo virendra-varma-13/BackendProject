@@ -39,28 +39,28 @@
 
 			<div class="mb-3">
 				<label for="name" class="form-label">Name
-					</label> <input type="text" class="form-control" name="name">	
+					</label> <input required type="text" class="form-control" name="name">	
 			</div>
 			
 			<div class="mb-3">
 				<label for="mobileNumber" class="form-label">Mobile Number
-					</label> <input type="number" class="form-control" name="mobileNumber">	
+					</label> <input required type="text" pattern="[3-9]{1}[0-9]{9}" class="form-control" name="mobileNumber">	
 			</div>
             
 			<div class="mb-3">
 				<label for="email" class="form-label">Email
-					</label> <input type="email" class="form-control" name="email">	
+					</label> <input required type="email" class="form-control" name="email">	
 			</div>
 
 			<div class="mb-3">
 				<label for="yearOfExperience" class="form-label">Years of experience
-					</label> <input type="number" class="form-control" name="yearOfExperience">	
+					</label> <input required type="number" class="form-control" name="yearOfExperience">	
 			</div>
 
             
 			<div class="mb-3">
 				<label for="location" class="form-label">Location
-					</label> <input type="text" class="form-control" name="location">	
+					</label> <input required type="text" class="form-control" name="location">	
 			</div>
 
 			<center>  <button type="submit" class="btn btn-primary">Submit</button></center>

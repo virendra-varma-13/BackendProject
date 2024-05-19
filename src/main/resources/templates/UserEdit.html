@@ -39,25 +39,25 @@
 			<input type="hidden" name="id" th:value="${user.id}"/>
 			<div class="mb-3">
 				<label for="name" class="form-label">Name
-					</label> <input type="text" class="form-control" name="name" th:value="${user.name}">	
+					</label> <input required type="text" class="form-control" name="name" th:value="${user.name}">	
 			</div>
 			
 			<div class="mb-3">
 				<label for="mobileNumber" class="form-label">Mobile Number
-					</label> <input type="text" class="form-control" name="mobileNumber" th:value="${user.mobileNumber}">	
+					</label> <input required type="text" pattern="[3-9]{1}[0-9]{9}" class="form-control" name="mobileNumber" th:value="${user.mobileNumber}">	
 			</div>
             <div class="mb-3">
 				<label for="email" class="form-label">Email
-					</label> <input type="text" class="form-control" name="email" th:value="${user.email}">	
+					</label> <input required type="email" class="form-control" name="email" th:value="${user.email}">	
 			</div>
 			
 			<div class="mb-3">
 				<label for="yearOfExperience" class="form-label">Years of Experience
-					</label> <input type="text" class="form-control" name="yearOfExperience" th:value="${user.yearOfExperience}">	
+					</label> <input required type="text" class="form-control" name="yearOfExperience" th:value="${user.yearOfExperience}">	
 			</div>
 			<div class="mb-3">
 				<label for="location" class="form-label">Location
-					</label> <input type="text" class="form-control" name="location" th:value="${user.location}">	
+					</label> <input required type="text" class="form-control" name="location" th:value="${user.location}">	
 			</div>
 			
 			<center><button type="submit" class="btn btn-primary">Submit</button></center>

@@ -52,14 +52,14 @@ public class UserController {
 
     
 	@RequestMapping("/editUser/{id}")
-	public String editBook(@PathVariable("id") int id, Model model) {
+	public String editUser(@PathVariable("id") int id, Model model) {
 		Users u=service.getUser(id);
 		model.addAttribute("user", u);
 		return "UserEdit";
 	}
     
 	@RequestMapping("/deleteUser/{id}")
-	public String deleteBook(@PathVariable("id") int id) {
+	public String deleteUser(@PathVariable("id") int id) {
 		service.deleteUserById(id);
 		return "redirect:/all_users";
 	}
